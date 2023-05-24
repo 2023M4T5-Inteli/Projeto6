@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Roteador</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form input {
+            margin-bottom: 10px;
+        }
+
+        form button {
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Roteador</h1>
+    <form action="/cadastrar_roteador" method="POST">
+        <input type="number" name="coordenada_X" placeholder="Coordenada X" required>
+        <input type="number" name="coordenada_Y" placeholder="Coordenada Y" required>
+        <input type="text" name="ID_roteador" placeholder="ID do Roteador" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h1>Cadastrar rastreador</h1>
+    <form action="/cadastrar_rastreador" method="POST">
+        <input type="text" name="id_roteador">
+        <input type="text" name="id_rastreador">
+        <input type="text" name="horario">
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
